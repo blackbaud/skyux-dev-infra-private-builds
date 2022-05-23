@@ -38,7 +38,7 @@ const parser = (0, yargs_1.default)((0, helpers_1.hideBin)(process.argv))
         await parser.parse();
     }
     catch (err) {
-        console.error(`\n[!] ${err.message}\n`);
+        console.error(`\n[!] ${err.message}\n`, err);
         process.exit(1);
     }
 })();
