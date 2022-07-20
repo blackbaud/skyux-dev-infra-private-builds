@@ -1,6 +1,6 @@
 {
   "name": "@skyux/dev-infra-private",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "SKY UX Development Infrastructure - INTERNAL USE ONLY",
   "bin": {
     "skyux-dev": "./bin/skyux-dev.js"
