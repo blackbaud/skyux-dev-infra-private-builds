@@ -1,6 +1,6 @@
 {
   "name": "@skyux/dev-infra-private",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "SKY UX Development Infrastructure - INTERNAL USE ONLY",
   "bin": {
     "skyux-dev": "./bin/skyux-dev.js"
@@ -21,10 +21,12 @@
   "dependencies": {
     "axios": "0.26.1",
     "cross-spawn": "7.0.3",
-    "fs-extra": "10.0.1",
+    "fs-extra": "10.1.0",
     "glob": "7.2.0",
     "inquirer": "8.2.2",
-    "semver": "7.3.7",
-    "yargs": "17.4.1"
+    "semver": "7.3.8",
+    "standard-version": "9.5.0",
+    "typedoc": "0.22.15",
+    "yargs": "17.6.2"
   }
 }
