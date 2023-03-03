@@ -19,6 +19,7 @@ const cli_10 = require("../lib/migrate/cli");
 const cli_11 = require("../lib/pristine-commit/cli");
 const cli_12 = require("../lib/publish-packages-dist/cli");
 const cli_13 = require("../lib/publish-storybook/cli");
+const cli_14 = require("../lib/workflow/cli");
 const parser = (0, yargs_1.default)((0, helpers_1.hideBin)(process.argv))
     .command(cli_1.CheckLibraryDependenciesModule)
     .command(cli_2.CheckLibraryMissingPeersModule)
@@ -35,6 +36,7 @@ const parser = (0, yargs_1.default)((0, helpers_1.hideBin)(process.argv))
     .command(cli_11.PristineCommitModule)
     .command(cli_12.PublishPackagesDistModule)
     .command(cli_13.PublishStorybookModule)
+    .command(cli_14.WorkflowModule)
     .help()
     .strict()
     .demandCommand(1, 'Provide a command (or type --help to see a list of commands).')
