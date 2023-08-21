@@ -1,6 +1,6 @@
 {
   "name": "@skyux/dev-infra-private",
-  "version": "9.0.0-alpha.5",
+  "version": "9.0.0-alpha.6",
   "description": "SKY UX Development Infrastructure - INTERNAL USE ONLY",
   "bin": {
     "skyux-dev": "./bin/skyux-dev.js"
@@ -15,9 +15,6 @@
     "url": "https://github.com/blackbaud/skyux-dev-infra/issues"
   },
   "homepage": "https://github.com/blackbaud/skyux-dev-infra#readme",
-  "peerDependencies": {
-    "typedoc": "~0.23.25"
-  },
   "dependencies": {
     "axios": "0.26.1",
     "cross-spawn": "7.0.3",
@@ -26,6 +23,7 @@
     "inquirer": "8.2.6",
     "semver": "7.5.4",
     "standard-version": "9.5.0",
+    "typedoc": "0.24.8",
     "yargs": "17.7.2"
   }
 }
