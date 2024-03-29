@@ -1,6 +1,6 @@
 {
   "name": "@skyux/dev-infra-private",
-  "version": "9.0.0-alpha.21",
+  "version": "10.0.0-alpha.1",
   "description": "SKY UX Development Infrastructure - INTERNAL USE ONLY",
   "bin": {
     "skyux-dev": "./bin/skyux-dev.js"
@@ -16,14 +16,14 @@
   },
   "homepage": "https://github.com/blackbaud/skyux-dev-infra#readme",
   "dependencies": {
-    "axios": "0.26.1",
+    "axios": "1.6.7",
     "cross-spawn": "7.0.3",
-    "fs-extra": "11.1.1",
-    "glob": "10.3.3",
+    "fs-extra": "11.2.0",
+    "glob": "10.3.10",
     "inquirer": "8.2.6",
     "semver": "7.5.4",
     "standard-version": "9.5.0",
-    "typedoc": "0.24.8",
+    "typedoc": "0.25.7",
     "yargs": "17.7.2"
   }
 }
