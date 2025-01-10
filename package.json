@@ -1,6 +1,6 @@
 {
   "name": "@skyux/dev-infra-private",
-  "version": "10.0.0-alpha.20",
+  "version": "10.0.0-alpha.21",
   "description": "SKY UX Development Infrastructure - INTERNAL USE ONLY",
   "bin": {
     "skyux-dev": "./bin/skyux-dev.js"
@@ -23,7 +23,7 @@
     "inquirer": "8.2.6",
     "semver": "7.5.4",
     "standard-version": "9.5.0",
-    "typedoc": "0.25.7",
+    "typedoc": "0.24.8",
     "yargs": "17.7.2"
   }
 }
