@@ -51,7 +51,7 @@ const parser = (0, yargs_1.default)((0, helpers_1.hideBin)(process.argv))
     .strict()
     .demandCommand(1, 'Provide a command (or type --help to see a list of commands).')
     .fail(false);
-(async () => {
+void (async () => {
     try {
         await parser.parse();
     }
