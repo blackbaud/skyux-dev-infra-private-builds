@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/blackbaud/skyux-dev-infra/main/skyuxdev-config.schema.json",
+  "title": "SKY UX Dev Infra configuration",
+  "description": "Configuration for the SKY UX development infrastructure CLI (`skyux-dev`), read from the `.skyuxdev.json` file at the workspace root.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "The URL or path to the JSON schema for this file."
+    },
+    "baseBranch": {
+      "type": "string",
+      "description": "The name of the branch that releases are based on (e.g., `main` or `14.x.x`)."
+    },
+    "expectedRegistryUrl": {
+      "type": "string",
+      "description": "The NPM registry URL that packages are expected to be published to. Publishing aborts if the configured registry does not match this value."
+    },
+    "implicitPeerDependencies": {
+      "type": "object",
+      "description": "A collection of implicit peer dependencies, keyed by the Nx project name. Used when static analysis cannot detect a dependency through an import or export. For example, the library may create an artifact or configuration that expects another package to be installed by the consumer.",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "offsetPackageVersions": {
+      "type": "object",
+      "description": "A map of placeholder versions to version offsets, used to derive package versions during a packages distribution build. Each key is a placeholder version (e.g., `0.0.0-PLACEHOLDER`) and each value is a `major[.minor]` offset applied to the base SKY UX version.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "packageNameUsedToDetermineDistTags": {
+      "type": "string",
+      "description": "The name of the published NPM package whose dist-tags are used to determine the dist-tags for the workspace's packages."
+    },
+    "releaseBranch": {
+      "type": "string",
+      "description": "A pattern for the name of release branches. The string `{baseBranch}` is replaced with the value of `baseBranch`. For example, if `baseBranch` is `main` and `releaseBranch` is `release/{baseBranch}`, the resulting release branch name is `release/main`."
+    },
+    "resourcesModulePaths": {
+      "type": "object",
+      "description": "Overrides the location and name of the generated library resources module, keyed by the Nx project name. The value is the path passed to the `@skyux/i18n:lib-resources-module` generator, relative to the library's source root. Defaults to `lib/modules/shared/sky-<projectName>`.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}
